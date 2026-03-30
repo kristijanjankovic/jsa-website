@@ -143,8 +143,8 @@ export default function Page() {
             ],
           },
           {
-            name: "Senior Pacific-Focused Associate",
-            role: "Regional Specialist – Northeast Asia and the Western Pacific",
+            name: "Matthew Schlosser, MA",
+role: "Senior Pacific Analyst",
             image: "/pacific-specialist.png",
             bio: [
               "Retired U.S. Army Lieutenant Colonel with multiple Iraq tours and experience as a DIA-trained all-source intelligence analyst.",
