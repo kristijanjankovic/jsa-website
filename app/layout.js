@@ -17,9 +17,6 @@ export const metadata = {
   icons: {
     icon: "/logo.png",
   },
-  verification: {
-    google: "gVnsAFRtd4NkDMRKVU266laGm9b4cDUv2z2uTTQneYQ",
-  },
 };
 
 export default function RootLayout({ children }) {
@@ -28,7 +25,15 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="gVnsAFRtd4NkDMRKVU266laGm9b4cDUv2z2uTTQneYQ"
+        />
+      </head>
+      <body className="min-h-full flex flex-col">
+        {children}
+      </body>
     </html>
   );
 }
