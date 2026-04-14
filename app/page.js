@@ -177,6 +177,7 @@ role: "Senior Pacific Analyst",
       footer: {
         copyright: "© 2026 Jankovic Strategic Analysis LLC. All rights reserved.",
         motto: "Vigilantia et fortitudo in Domino!",
+        dv: "Disabled Veteran-Owned Business",
       },
     },
 
@@ -588,6 +589,7 @@ role: "Senior Pacific Analyst",
         <footer style={styles.footer}>
           <p style={styles.footerText}>{t.footer.copyright}</p>
           <p style={styles.footerMotto}>{t.footer.motto}</p>
+          <p style={styles.footerSub}>{t.footer.dv}</p>
         </footer>
       </div>
     </div>
@@ -1022,10 +1024,16 @@ const styles = {
   },
 
   footerMotto: {
-    margin: 0,
-    color: "#0f172a",
-    textAlign: "center",
-    fontWeight: 800,
-    fontSize: "1.02rem",
-  },
+  textAlign: "center",
+  fontWeight: 800,
+  fontSize: "1.02rem",
+},
+
+footerSub: {
+  margin: 0,
+  color: "#64748b",
+  textAlign: "center",
+  fontSize: "0.85rem",
+  marginTop: "4px"
+  }
 };
