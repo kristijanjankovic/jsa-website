@@ -551,22 +551,39 @@ role: "Senior Pacific Analyst",
             <p style={styles.heroText}>{t.heroText}</p>
 
             <div style={styles.heroButtonRow}>
-              <button
-                style={styles.primaryButton}
-                onClick={() => setTab("services")}
-              >
-                {t.heroButtons.primary}
-              </button>
-              <button
-                style={styles.secondaryButton}
-                onClick={() => setTab("team")}
-              >
-                {t.heroButtons.secondary}
-              </button>
-            </div>
+  <button
+    style={styles.primaryButton}
+    onClick={() => setTab("services")}
+  >
+    {t.heroButtons.primary}
+  </button>
+
+  <button
+    style={styles.secondaryButton}
+    onClick={() => setTab("team")}
+  >
+    {t.heroButtons.secondary}
+  </button>
+
+  <a
+    href="/Jankovic_Strategic_Analysis_Capabilities_Statement.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      padding: "14px 22px",
+      borderRadius: "12px",
+      background: "#22c55e",
+      color: "#0f172a",
+      fontWeight: 800,
+      textDecoration: "none",
+      display: "inline-block"
+    }}
+  >
+    Capabilities Statement
+  </a>
+</div>
           </div>
         </section>
-
         <nav style={styles.nav}>
           <div style={styles.navScroller}>
             {t.tabs.map((item) => (
@@ -584,7 +601,10 @@ role: "Senior Pacific Analyst",
           </div>
         </nav>
 
-        <main style={styles.main}>{renderActiveTab()}</main>
+        <main style={styles.main}>
+  {renderActiveTab()}
+
+</main>
 
         <footer style={styles.footer}>
           <p style={styles.footerText}>{t.footer.copyright}</p>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 const capabilityGroups = [
   {
     title: "Strategic Analysis",
